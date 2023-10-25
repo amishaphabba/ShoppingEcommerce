@@ -59,12 +59,12 @@
 <img width="938" alt="15  cart_example1" src="https://github.com/amishaphabba/ShoppingEcommerce/assets/75721242/361a2035-dceb-4f12-945f-b15c77ad85a7">
 
 
-16. add shipping address
-<img width="934" alt="14  add_shipping_address" src="https://github.com/amishaphabba/ShoppingEcommerce/assets/75721242/9ba021eb-fda6-4dcc-807d-0b4abb3e3cf2">
-
-
-17. increment quantity in cart
+16. increment quantity in cart
 <img width="925" alt="16  increment_quantity" src="https://github.com/amishaphabba/ShoppingEcommerce/assets/75721242/0cc970ab-7f48-4cf4-ad50-5b04b1bfdb29">
+
+
+17. add shipping address
+<img width="934" alt="14  add_shipping_address" src="https://github.com/amishaphabba/ShoppingEcommerce/assets/75721242/9ba021eb-fda6-4dcc-807d-0b4abb3e3cf2">
 
 
 18. confirm order and shipping details
@@ -89,7 +89,6 @@
 
 23. user order history example 2
 <img width="928" alt="22  order_history_example2" src="https://github.com/amishaphabba/ShoppingEcommerce/assets/75721242/62456be0-36eb-4671-b676-1843d86b11b3">
-
 
 24. particular order details - on click order histor
 <img width="936" alt="23  placed_order_details" src="https://github.com/amishaphabba/ShoppingEcommerce/assets/75721242/38105ca2-b825-4464-84e5-2bf82c61bf23">
