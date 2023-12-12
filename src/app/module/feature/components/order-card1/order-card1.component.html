@@ -1,0 +1,15 @@
+<div class="box">
+    <div class="grid grid-cols-6 text-black">
+        <div class="col-span-3">
+            <div class="flex items-center w-full">
+                <img class="w-[5rem] h-[5rem] object-cover object-top" src="{{orderItem.product.imageUrl}}" alt="">
+
+                <div class="ml-5">
+                    <p class="font-medium text-lg text-ellipsis overflow-hidden">{{orderItem.product.title}}</p>               
+                    <p class="text-sm text-gray-500">Size: {{orderItem.size}}</p>
+                    <p class="text-sm text-gray-500">color: {{orderItem.product.color}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

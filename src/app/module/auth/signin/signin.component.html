@@ -1,0 +1,34 @@
+<div>
+    <!-- <mat-error *ngIf="noUser">
+        <p class="text-center">User does not exist</p>
+    </mat-error> -->
+    <form [formGroup]="loginForm" (ngSubmit)="submitForm()" class="text-center p-[1rem]">
+        <h1 class="font-medium text-lg p-2" >
+            Phabba Merchants
+        </h1>
+        <div>
+            <mat-form-field class="w-full">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" required email>
+                <mat-error *ngIf="loginForm.controls['email'].hasError('required')">Email required</mat-error> 
+                <mat-error *ngIf="loginForm.controls['email'].hasError('email')">
+                    Incorrect Email
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-full">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" required password>
+                <mat-error *ngIf="loginForm.controls['password'].hasError('required')">Password required</mat-error> 
+                <mat-error *ngIf="loginForm.controls['password'].hasError('minlength')">Password should be of 8 characters long atleast </mat-error> 
+            </mat-form-field>
+            <div>
+                <button mat-raised-button class="w-full p-[1.7 rem]" color="accent">LOGIN</button>
+            </div>
+            <div class="py-4">
+                <span>Dont have an account? </span>
+                <button mat-button color="accent" 
+                (click)="changeTemplateToSignup()">REGISTER</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+<div class="w-full">
+    <div class="bg-white w-full h-1/2 shadow-lg p-6">
+        <div class="flex justify-around">
+            <div class="flex flex-col" *ngFor="let item of category.categories[selectedSection].sections">
+                <h1 class="text center">{{item.name}}</h1>
+                <button (click)="handleNavigate('/' + category.categories[selectedSection].id +'/' + item.id + '/' + section.id)" mat-button *ngFor="let section of item.items">
+                    {{section.name}}
+                </button>
+            </div>
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top"  src={{category.categories[selectedSection].featured[0].imageSrc}} alt="">
+                    <p class="textgray-600">New Arrival</p>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top"  src={{category.categories[selectedSection].featured[1].imageSrc}} alt="">
+                    <p class="textgray-600">New Arrival</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

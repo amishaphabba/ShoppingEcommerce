@@ -1,0 +1,21 @@
+<div class="min-h-screen">
+    <div class="mt-10 px-5 lg:mx-16">
+        <p class="text-lg font-medium">User / Order History</p>
+    </div>
+
+    <div class="mt-5 text-white px-5 lg:px-20">
+
+        <div class="col-span-3 space-y-5 my-5 max-w-4xl rounded-md">
+
+            <ng-container class="box" *ngIf="orderHistory.length==0">
+                <p class="rounded-md box text-black text-center">No Orders To Show</p>
+            </ng-container>
+
+            <div class="opacity-2" *ngFor="let order of orderHistory">
+                <div class="cursor-pointer" (click)="navigateToOrderDetails(order.orderId)">
+                    <app-order-card [orderItem]="order"></app-order-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

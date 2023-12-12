@@ -1,0 +1,25 @@
+<div class="box">
+    <div class="grid grid-cols-6 text-black">
+        <div class="col-span-3">
+            <div class="flex items-center w-full">
+                <img class="w-[5rem] h-[5rem] object-cover object-top" src="{{orderItem.orderItems[0].product.imageUrl}}" alt="">
+
+                <div class="ml-5">
+                    <p class="font-medium text-lg text-ellipsis overflow-hidden">{{orderItem.orderItems[0].product.title}}</p>               
+                    <p class="text-sm text-gray-500">Size: {{orderItem.orderItems[0].size}}</p>
+                    <p class="text-sm text-gray-500">color: {{orderItem.orderItems[0].product.color}}</p>
+                </div>
+            </div>
+        </div>
+           
+        <div class="col-span-1">
+            <p class="font-semi-bold text-lg">{{orderItem.totalDiscountedPrice}}</p>
+        </div>
+
+        <div class="col-span-2">
+            <!-- <p class="font-medium">Expected delivery on Oct 17</p> -->
+            <p>Your order has been {{orderItem.orderStatus}}</p>
+        </div>
+
+    </div>
+</div>

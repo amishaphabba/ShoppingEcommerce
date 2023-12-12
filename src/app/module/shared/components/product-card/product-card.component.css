@@ -1,0 +1,17 @@
+.textPart .productTitle{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productCard{
+    transition: transform 0.3s ease-in-out;
+    box-shadow: #000000 0px 5px 10px;
+}
+
+.productCard:hover .textPart{
+    transform: translateY(-1rem);
+}
+
